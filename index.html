@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Movie Explorer</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Movie Explorer</h1>
+
+    <div class="search-bar">
+      <input type="text" id="searchQuery" placeholder="Enter movie title..." />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <h2>Top 5 Most Searched Movies</h2>
+    <div id="topSearches"></div>
+
+    <div id="searchSection" style="display: none;">
+      <h2>Search Results</h2>
+      <div id="results"></div>
+    </div>
+
+    <div id="movieModal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+
+    <div id="movieModal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
